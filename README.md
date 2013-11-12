@@ -6,29 +6,29 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 ##Creational	
 * Abstract factory 
 * Builder 
-* Factory method 
+* Factory - **done**
 * Prototype 
-* Singleton 
+* Singleton - **done**
 * Object pool
 
 ## Structural	
-* Adapter 
+* Adapter - **done**
 * Bridge 
 * Composite 
 * Decorator 
-* Facade 
+* Facade - **done**
 * Flyweight 
 * Proxy
 
 ## Behavioral	
 * Chain of responsibility 
-* Command Interpreter 
+* Command - **done**
 * Iterator 
 * Mediator 
 * Memento 
 * Observer 
 * State 
-* Strategy 
+* Strategy - **done**
 * Template method 
 * Visitor
 *
