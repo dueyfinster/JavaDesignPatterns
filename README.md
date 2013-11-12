@@ -3,13 +3,13 @@ A collection of design patterns in Java.
 My aim is to implement all of them (with documentation) as a learning resource/ reference point for myself and others.
 
 
-## Creational	
+## Creational	- **done**
 * Abstract factory - **done**
 * Builder - **done**
 * Factory - **done**
 * Prototype - **done**
 * Singleton - **done**
-* Object pool
+* Object pool - **done**
 
 ## Structural	
 * Adapter - **done**
