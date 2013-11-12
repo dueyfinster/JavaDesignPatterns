@@ -2,6 +2,8 @@ package creational.abstractfactory;
 
 public class HouseFactory {
 	
+	public HouseFactory() {}
+	
 	public static House buildHouse(HouseType ht){
 		House house = null;
 		HouseLocation hl = HouseLocation.SUBURBS;
