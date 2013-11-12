@@ -2,7 +2,8 @@ package behavioural.command;
 
 /**
  * @author Neil Grogan
- *
+ * 
+ * Class to run all the commands
  */
 public class CommandRunner {
 

@@ -3,9 +3,9 @@ A collection of design patterns in Java.
 My aim is to implement all of them (with documentation) as a learning resource/ reference point for myself and others.
 
 
-##Creational	
+## Creational	
 * Abstract factory 
-* Builder 
+* Builder - **done**
 * Factory - **done**
 * Prototype 
 * Singleton - **done**
