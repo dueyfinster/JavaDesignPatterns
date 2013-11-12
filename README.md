@@ -7,7 +7,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 * Abstract factory - **done**
 * Builder - **done**
 * Factory - **done**
-* Prototype 
+* Prototype - **done**
 * Singleton - **done**
 * Object pool
 
