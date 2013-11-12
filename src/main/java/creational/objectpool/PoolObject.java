@@ -12,7 +12,7 @@ public class PoolObject {
 	}
 
 	public void close() {
-		System.out.println("Closed");
+		this.i = 0;
 		
 	}
 }

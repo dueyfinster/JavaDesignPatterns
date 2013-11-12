@@ -14,7 +14,7 @@ public abstract class ObjectPool {
 	abstract void expire(PoolObject o);
 
 	ObjectPool() {
-		expirationTime = 30000; // 30 seconds
+		expirationTime = 10000; // 10 seconds
 		locked = new Hashtable();
 		unlocked = new Hashtable();
 	}
@@ -41,8 +41,6 @@ public abstract class ObjectPool {
 						locked.put(o, new Long(now));
 						return (o);
 					} else {
-						System.out.println("Object failed validation: "
-								+ o.toString());
 						unlocked.remove(o);
 						expire(o);
 						o = null;
@@ -50,9 +48,8 @@ public abstract class ObjectPool {
 				}
 			}
 		}
-		// no objects available, create a new one
-		System.out.println("no objects available, creating a new one");
 		o = (PoolObject) create();
+		System.out.println("no objects available, creating a new one: " + o);
 		locked.put(o, new Long(now));
 		return (o);
 	}
