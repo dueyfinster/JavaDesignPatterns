@@ -11,7 +11,7 @@ public class NewClient {
 	}
 	
 	public static String getDate(){
-		return Adapter.getDate();
+		return AdapterRunner.getDate();
 	}
 
 }

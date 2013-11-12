@@ -1,6 +1,6 @@
 package creational.factory;
 
-public class TestHouseFactoryPattern {
+public class HouseFactoryPatternRunner {
 	public static void main(String[] args) {
 		System.out.println(HouseFactory.buildHouse(HouseType.DETACHED) + "\n");
 		System.out.println(HouseFactory.buildHouse(HouseType.SEMI) + "\n");
