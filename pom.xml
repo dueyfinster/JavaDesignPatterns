@@ -35,7 +35,7 @@
           <configuration>
                   <configLocation>checkstyle.xml</configLocation>
                   <consoleOutput>true</consoleOutput>
-                  <failsOnError>false</failsOnError>
+                  <failsOnError>true</failsOnError>
           </configuration>
           <executions>
                   <execution>
@@ -48,89 +48,24 @@
           </executions>
       </plugin>
       <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.6.3.201306030806</version>
+          <executions>
+              <execution>
+                  <id>prepare-agent</id>
+                  <goals>
+                      <goal>prepare-agent</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>
+      <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
         <version>2.0.1</version>
       </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.6.3.201306030806</version>
-        <executions>
-	  <execution>
-            <id>pre-unit-test</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-            <configuration>
-                <!-- Sets the path to the file which contains the execution data. -->
-                <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
-                <!--
-                   Sets the name of the property containing the settings
-                   for JaCoCo runtime agent.
-               -->
-                <propertyName>surefireArgLine</propertyName>
-            </configuration>
-        </execution>
-          <execution>
-            <id>default-prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>default-report</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>default-check</id>
-            <goals>
-              <goal>check</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <rule>
-                  <element>BUNDLE</element>
-                  <limits>
-                    <limit>
-                      <counter>COMPLEXITY</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.60</minimum>
-                    </limit>
-                  </limits>
-                </rule>
-              </rules>
-            </configuration>
-          </execution>
-	  <execution>
-		<id>jacoco-site</id>
-		<phase>package</phase>
-		<goals>
-			<goal>report</goal>
-		</goals>
-	  </execution>
-	   <!--
-           Ensures that the code coverage report for unit tests is created after
-           unit tests have been run.
-       -->
-        <execution>
-            <id>post-unit-test</id>
-            <phase>test</phase>
-            <goals>
-                <goal>report</goal>
-            </goals>
-            <configuration>
-                <!-- Sets the path to the file which contains the execution data. -->
-                <dataFile>${project.build.directory}/jacoco.exec</dataFile>
-                <!-- Sets the output directory for the code coverage report. -->
-                <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
-            </configuration>
-        </execution>
-        </executions>
-      </plugin>
+      
     </plugins>
   </build>
   <dependencies>
