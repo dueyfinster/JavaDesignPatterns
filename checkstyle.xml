@@ -162,13 +162,13 @@
 
         <!-- Checks for class design                         -->
         <!-- See http://checkstyle.sf.net/config_design.html -->
-<!--         <module name="FinalClass"/>
-        <module name="HideUtilityClassConstructor"/>
+        <module name="FinalClass"/>
         <module name="InterfaceIsType"/>
         <module name="VisibilityModifier">
             <property name="packageAllowed" value="true"/>
             <property name="protectedAllowed" value="true"/>
-        </module> -->
+        </module>
+        <!-- <module name="HideUtilityClassConstructor"/> -->
 
 
         <!-- Miscellaneous other checks.                   -->

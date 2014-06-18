@@ -5,7 +5,7 @@ package behavioural.command;
  * 
  * Class to run all the commands
  */
-public class CommandRunner {
+public final class CommandRunner {
 
     public static void main(final String[] args) {
         
