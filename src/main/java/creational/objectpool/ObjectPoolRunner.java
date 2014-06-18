@@ -1,7 +1,7 @@
 package creational.objectpool;
 
 public class ObjectPoolRunner {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(final String[] args) throws InterruptedException {
         ObjectPoolImpl opi = new ObjectPoolImpl(); // create a new pool
         PoolObject po = (PoolObject) opi.checkOut(); // check out from the pool
         opi.validate(po); // Validate it's still good

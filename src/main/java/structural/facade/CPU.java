@@ -5,7 +5,7 @@ public class CPU {
     public void freeze() {
         System.out.println("Processor freezed");
     }
-    public void jump(long position) {
+    public void jump(final long position) {
         System.out.println("Processor jumped to position " + position);
     }
     public void execute() {

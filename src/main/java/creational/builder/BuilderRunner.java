@@ -4,7 +4,7 @@ public class BuilderRunner {
     private static final int NO_OF_DOORS = 3;
     private static final int NO_OF_WINDOWS = 3;
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         HouseBuilder hb = new HouseBuilder(); // create a new builder
         hb.setHouseType(HouseType.DETACHED); // set attribute on builder
         hb.setNoOfDoors(NO_OF_DOORS); // set attribute on builder

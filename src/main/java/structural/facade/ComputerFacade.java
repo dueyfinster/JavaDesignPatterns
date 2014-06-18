@@ -1,7 +1,7 @@
 package structural.facade;
 
 class ComputerFacade {
-    private static final long POSITION = 10l;
+    private static final long POSITION = 10L;
     private static final int SIZE = 10;
     private CPU processor;
     private Memory ram;

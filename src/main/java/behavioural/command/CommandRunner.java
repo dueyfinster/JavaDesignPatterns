@@ -7,7 +7,7 @@ package behavioural.command;
  */
 public class CommandRunner {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         
         LightBulb light = new LightBulb(); // Object we want to manipulate
         

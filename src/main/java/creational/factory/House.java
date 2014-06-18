@@ -4,7 +4,7 @@ public abstract class House {
 
     private HouseType houseType;
 
-    public House(HouseType ht){
+    public House(final HouseType ht){
         this.houseType = ht;
         orderMaterials();
     }

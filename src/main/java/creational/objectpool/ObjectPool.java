@@ -55,7 +55,7 @@ public abstract class ObjectPool {
         return (o);
     }
 
-    synchronized void checkIn(Object o) {
+    synchronized void checkIn(final Object o) {
         System.out.println("Checking in: " + o.toString());
         locked.remove(o);
         unlocked.put(o, new Long(System.currentTimeMillis()));

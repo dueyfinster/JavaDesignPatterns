@@ -2,7 +2,7 @@ package creational.abstractfactory;
 
 public class SemiDetachedHouse extends House {
 
-    public SemiDetachedHouse(HouseLocation hl) {
+    public SemiDetachedHouse(final HouseLocation hl) {
         super(HouseType.SEMI, hl);
         construct();
     }

@@ -3,7 +3,7 @@ package creational.objectpool;
 public class PoolObject {
     private int i;
     
-    PoolObject(int i){
+    PoolObject(final int i){
         this.i = i;
     }
     

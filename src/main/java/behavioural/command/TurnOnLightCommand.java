@@ -3,7 +3,7 @@ package behavioural.command;
 public class TurnOnLightCommand implements ICommand {
     private ILight light;
     
-    TurnOnLightCommand(ILight light){
+    TurnOnLightCommand(final ILight light){
         this.light = light;
     }
     

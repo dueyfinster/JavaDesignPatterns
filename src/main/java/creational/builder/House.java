@@ -5,7 +5,7 @@ public class House {
     private int noOfWindows;
     private int noOfDoors;
     
-    House(HouseType houseType, int noOfWindows, int noOfDoors){
+    House(final HouseType houseType, final int noOfWindows, final int noOfDoors){
         this.houseType = houseType;
         this.noOfWindows = noOfWindows;
         this.noOfDoors = noOfDoors;

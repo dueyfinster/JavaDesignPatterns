@@ -5,15 +5,15 @@ public class HouseBuilder {
     private int noOfWindows;
     private int noOfDoors;
     
-    public void setHouseType(HouseType houseType){
+    public void setHouseType(final HouseType houseType){
         this.houseType = houseType;
     }
     
-    public void setNoOfWindows(int noOfWindows){
+    public void setNoOfWindows(final int noOfWindows){
         this.noOfWindows = noOfWindows;
     }
     
-    public void setNoOfDoors(int noOfDoors){
+    public void setNoOfDoors(final int noOfDoors){
         this.noOfDoors = noOfDoors;
     }
     

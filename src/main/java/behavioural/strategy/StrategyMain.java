@@ -7,7 +7,7 @@ public class StrategyMain {
 
     private static Context context;
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
          // Three contexts following different strategies
         context = new Context(new Add());
         int resultA = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);

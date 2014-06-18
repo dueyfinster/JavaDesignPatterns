@@ -7,12 +7,12 @@ import java.util.List;
 public class Switch {
    private List<ICommand> commandHistory = new ArrayList<ICommand>();
  
-   public void run(ICommand cmd) {
+   public void run(final ICommand cmd) {
       this.commandHistory.add(cmd);
       cmd.execute();        
    }
    
-   public void undo(ICommand c) {
+   public void undo(final ICommand c) {
        c.rollback();
        this.commandHistory.remove(c);           
    }

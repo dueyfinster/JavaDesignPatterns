@@ -9,7 +9,7 @@ public class ObjectPoolImpl extends ObjectPool{
     }
 
     @Override
-    boolean validate(PoolObject o) {
+    boolean validate(final PoolObject o) {
         if(o.getValue() == OBJECT_NUMBER){
             System.out.println("The object: " + o + " validates");
             return true;
@@ -21,7 +21,7 @@ public class ObjectPoolImpl extends ObjectPool{
     
 
     @Override
-    void expire(PoolObject o) {
+    void expire(final PoolObject o) {
         System.out.println("Expiring object: " + o);
         o.close(); 
         

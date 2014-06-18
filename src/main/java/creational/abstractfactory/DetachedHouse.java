@@ -2,7 +2,7 @@ package creational.abstractfactory;
 
 public class DetachedHouse extends House {
 
-    public DetachedHouse(HouseLocation hl) {
+    public DetachedHouse(final HouseLocation hl) {
         super(HouseType.DETACHED, hl);
         construct();
     }
