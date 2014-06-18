@@ -1,6 +1,8 @@
 package behavioural.strategy;
 
 import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
 
 public class MultiplyTest extends TestCase {
     private Multiply multiply;
@@ -8,11 +10,12 @@ public class MultiplyTest extends TestCase {
     private final static int B = 7;
     private final static int EXPECTED = 35;
 
-
+    @Before
     public void setUp() throws Exception {
         multiply = new Multiply();
     }
 
+    @Test
     public void testExecute() throws Exception {
         int result = multiply.execute(A, B);
         assertEquals(EXPECTED, result);
