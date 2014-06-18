@@ -2,7 +2,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/dueyfinster/DesignPatterns/badge.png)](https://coveralls.io/r/dueyfinster/DesignPatterns)
 
-# Overview
+# Overview 
 A collection of design patterns in Java. 
 My aim is to implement all of them (with documentation) as a learning resource/ reference point for myself and others.
 
