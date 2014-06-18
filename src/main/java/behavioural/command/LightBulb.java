@@ -3,7 +3,7 @@ package behavioural.command;
 /**
  * @author Neil Grogan
  *
- * Standard Light Bulb with on and off switch
+ * Standard Light Bulb with on and off switch.
  *
  */
 public class LightBulb implements ILight {
