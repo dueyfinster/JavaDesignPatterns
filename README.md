@@ -6,40 +6,17 @@
 A collection of design patterns in Java. 
 My aim is to implement all of them (with documentation) as a learning resource/ reference point for myself and others.
 
-| Creational  | Structural | Behavioral |
+| ~~Creational~~  | Structural | Behavioral |
 | ------------- | ------------- | ------------- |
-| ~~Abstract factory~~  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
+| ~~Abstract factory~~  | ~~Adapter~~  |  Chain of responsibility  |
+| ~~Builder~~  | Bridge  | ~~Command~~  |
+| ~~Factory~~  | Composite   | Iterator  |
+| ~~Prototype~~  | Decorator  | Mediator  |
+| ~~Singleton~~  | ~~Facade~~  | Memento  |
+| ~~Object pool~~  | Flyweight | Observer  |
+| | Proxy  | State  |
+| | | ~~Strategy~~  |
+| | | Template method  |
+| | | Visitor  |
 
-## Creational	- **done**  
-*  - **done** 
-* ~~Builder~~ - **done**
-* ~~Factory~~ - **done**
-* ~~Prototype~~ - **done** 
-* ~~Singleton~~ - **done**
-* ~~Object pool~~ - **done**
-
-## Structural	
-* ~~Adapter~~ - **done**
-* Bridge 
-* Composite 
-* Decorator 
-* ~~Facade~~ - **done**
-* Flyweight 
-* Proxy
-
-## Behavioral	
-* Chain of responsibility 
-* ~~Command~~ - **done**
-* Iterator 
-* Mediator 
-* Memento 
-* Observer 
-* State 
-* ~~Strategy~~ - **done**
-* Template method 
-* Visitor
-*
-
-## 
+## Bulding
