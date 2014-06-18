@@ -16,7 +16,7 @@ class ComputerFacade {
     public void start() {
         processor.freeze();
         ram.load(POSITION, hd.read(POSITION, SIZE));
-        processor.jump(pos);
+        processor.jump(POSITION);
         processor.execute();
     }
 }
