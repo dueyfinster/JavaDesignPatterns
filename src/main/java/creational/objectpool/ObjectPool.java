@@ -4,6 +4,7 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 
 public abstract class ObjectPool {
+    private static final long EXP_TIME = 10000; // 10 seconds
     private long expirationTime;
     private Hashtable locked, unlocked;
 
@@ -14,7 +15,7 @@ public abstract class ObjectPool {
     abstract void expire(PoolObject o);
 
     ObjectPool() {
-        expirationTime = 10000; // 10 seconds
+        expirationTime = EXP_TIME; 
         locked = new Hashtable();
         unlocked = new Hashtable();
     }

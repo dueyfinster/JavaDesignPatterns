@@ -1,6 +1,8 @@
 package structural.facade;
 
 class ComputerFacade {
+    private static final long BLOCK = 10l;
+    private static final int SIZE = 10;
     private CPU processor;
     private Memory ram;
     private HDD hd;
@@ -13,8 +15,7 @@ class ComputerFacade {
  
     public void start() {
         processor.freeze();
-        long pos = 10l;
-        ram.load(pos, hd.read(pos, 10));
+        ram.load(pos, hd.read(POSITION, SIZE));
         processor.jump(pos);
         processor.execute();
     }

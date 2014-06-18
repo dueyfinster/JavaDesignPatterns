@@ -147,9 +147,9 @@
 
         <!-- Checks for common coding problems               -->
         <!-- See http://checkstyle.sf.net/config_coding.html -->
-<!--         <module name="EmptyStatement"/>
+        <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-        <module name="HiddenField">
+       <module name="HiddenField">
             <property name="tokens" value="VARIABLE_DEF"/>
         </module>
         <module name="IllegalInstantiation"/>
@@ -158,7 +158,7 @@
         <module name="MissingSwitchDefault"/>
         <module name="RedundantThrows"/>
         <module name="SimplifyBooleanExpression"/>
-        <module name="SimplifyBooleanReturn"/> -->
+        <module name="SimplifyBooleanReturn"/>
 
         <!-- Checks for class design                         -->
         <!-- See http://checkstyle.sf.net/config_design.html -->
