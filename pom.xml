@@ -13,6 +13,9 @@
   	<system>GitHub</system>
   	<url>https://github.com/dueyfinster/DesignPatterns/issues</url>
   </issueManagement>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <url>https://github.com/dueyfinster/DesignPatterns</url>
   <scm>
   	<url>https://github.com/dueyfinster/DesignPatterns</url>
