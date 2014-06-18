@@ -7,9 +7,9 @@ package creational.singleton;
  * 
  */
 public enum Singleton {
-	INSTANCE;
-	
-	public Singleton getInstance(){
-		return INSTANCE;
-	}
+    INSTANCE;
+    
+    public Singleton getInstance(){
+        return INSTANCE;
+    }
 }

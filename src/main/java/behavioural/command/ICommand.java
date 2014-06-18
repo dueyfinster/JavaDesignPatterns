@@ -10,9 +10,9 @@ package behavioural.command;
  * 
  */
 public interface ICommand {
-	
-	public void execute();
-	
-	public void rollback();
+    
+    public void execute();
+    
+    public void rollback();
 
 }

@@ -2,16 +2,16 @@ package creational.factory;
 
 public abstract class House {
 
-	private HouseType houseType;
+    private HouseType houseType;
 
-	public House(HouseType ht){
-		this.houseType = ht;
-		orderMaterials();
-	}
+    public House(HouseType ht){
+        this.houseType = ht;
+        orderMaterials();
+    }
 
-	private void orderMaterials() {
-		System.out.println("Ordering Materials for House: " + houseType.toString());
-	}
-	
-	protected abstract void construct();
+    private void orderMaterials() {
+        System.out.println("Ordering Materials for House: " + houseType.toString());
+    }
+    
+    protected abstract void construct();
 }

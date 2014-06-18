@@ -13,14 +13,14 @@ public class Switch {
    }
    
    public void undo(ICommand c) {
-	   c.rollback();
-	   this.commandHistory.remove(c);           
+       c.rollback();
+       this.commandHistory.remove(c);           
    }
    
    public void undoAll() {
-	   for(ICommand c: commandHistory){
-	    	  c.rollback();
-	    	  this.commandHistory.remove(c);
-	    }            
+       for(ICommand c: commandHistory){
+              c.rollback();
+              this.commandHistory.remove(c);
+        }            
    }
 }

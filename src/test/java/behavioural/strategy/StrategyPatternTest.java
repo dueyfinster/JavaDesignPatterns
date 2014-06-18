@@ -7,10 +7,10 @@ import org.junit.Test;
 
 public class StrategyPatternTest {
 
-	@Test
-	@Ignore
-	public void test() {
-		fail("Not yet implemented");
-	}
+    @Test
+    @Ignore
+    public void test() {
+        fail("Not yet implemented");
+    }
 
 }

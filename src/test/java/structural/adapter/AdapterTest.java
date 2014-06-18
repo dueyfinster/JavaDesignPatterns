@@ -7,11 +7,11 @@ import org.junit.Test;
 
 public class AdapterTest {
 
-	@Test
-	@Ignore
-	public void test() {
-		LegacyClient.getDate();
-		
-	}
+    @Test
+    @Ignore
+    public void test() {
+        LegacyClient.getDate();
+        
+    }
 
 }

@@ -2,10 +2,10 @@ package behavioural.strategy;
 
 public class StrategyMain {
 
-	private static Context context;
+    private static Context context;
 
-	public static void main(String[] args) {
-		 // Three contexts following different strategies
+    public static void main(String[] args) {
+         // Three contexts following different strategies
         context = new Context(new Add());
         int resultA = context.executeStrategy(10,5);
  
@@ -23,6 +23,6 @@ public class StrategyMain {
         System.out.println("Result C : " + resultC );
         System.out.println("Result D : " + resultD );
 
-	}
+    }
 
 }
