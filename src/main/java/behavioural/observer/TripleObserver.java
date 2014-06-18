@@ -4,14 +4,15 @@ public class TripleObserver implements Observer {
     int state = 0;
     
     @Override
-    public void update(Subject subject) {
-        this.state = subject.getState() * 3;
+    public void update(final Subject subject) {
+        this.state = subject.getState() * THREE;
         System.out.println("Subject tripled: "+state);
     }
     
     @Override
-    public int getState () {
+    public int getState() {
         return this.state;
     }
 
+    public static final int THREE = 3;
 }
