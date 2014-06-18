@@ -15,9 +15,8 @@ final class AdapterRunner {
         Date date = new Date(LegacyClient.getDate());
         
         DateFormat df = new SimpleDateFormat("dd/MM/yy");
-        String convertedDate = df.format(date); 
-        
-        return convertedDate;
+
+        return df.format(date);
     }
 
 }
