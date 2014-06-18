@@ -1,6 +1,9 @@
 package creational.objectpool;
 
-public class ObjectPoolRunner {
+final class ObjectPoolRunner {
+
+    private ObjectPoolRunner(){}
+
     public static void main(final String[] args) throws InterruptedException {
         ObjectPoolImpl opi = new ObjectPoolImpl(); // create a new pool
         PoolObject po = (PoolObject) opi.checkOut(); // check out from the pool

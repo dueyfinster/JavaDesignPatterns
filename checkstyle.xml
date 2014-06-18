@@ -168,7 +168,7 @@
             <property name="packageAllowed" value="true"/>
             <property name="protectedAllowed" value="true"/>
         </module>
-        <!-- <module name="HideUtilityClassConstructor"/> -->
+        <module name="HideUtilityClassConstructor"/>
 
 
         <!-- Miscellaneous other checks.                   -->

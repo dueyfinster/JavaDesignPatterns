@@ -1,8 +1,10 @@
 package creational.builder;
 
-public class BuilderRunner {
+final class BuilderRunner {
     private static final int NO_OF_DOORS = 3;
     private static final int NO_OF_WINDOWS = 3;
+
+    private BuilderRunner(){}
 
     public static void main(final String[] args) {
         HouseBuilder hb = new HouseBuilder(); // create a new builder

@@ -1,8 +1,8 @@
 package creational.abstractfactory;
 
-public class HouseFactory {
+final class HouseFactory {
     
-    public HouseFactory() {}
+    private HouseFactory(){}
     
     public static House buildHouse(final HouseType ht){
         House house = null;

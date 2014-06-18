@@ -1,6 +1,8 @@
 package structural.adapter;
 
-public class NewClient {
+final class NewClient {
+
+    private NewClient(){}
 
     /**
      * @param args

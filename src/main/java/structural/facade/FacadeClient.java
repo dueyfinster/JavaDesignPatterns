@@ -1,6 +1,8 @@
 package structural.facade;
 
-public class FacadeClient {
+final class FacadeClient {
+
+    private FacadeClient(){}
 
     public static void main(final String[] args) {
         ComputerFacade cf = new ComputerFacade(); // Hide low-level details with facade

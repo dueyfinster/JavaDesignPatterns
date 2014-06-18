@@ -1,11 +1,13 @@
 package behavioural.strategy;
 
-public class StrategyMain {
+final class StrategyMain {
 
     private static final int FIRST_NUMBER = 10;
     private static final int SECOND_NUMBER = 5;
 
     private static Context context;
+
+    private StrategyMain(){}
 
     public static void main(final String[] args) {
          // Three contexts following different strategies

@@ -1,6 +1,9 @@
 package creational.abstractfactory;
 
-public class AbstractHouseFactoryPatternRunner {
+final class AbstractHouseFactoryPatternRunner {
+
+    private AbstractHouseFactoryPatternRunner(){}
+
     public static void main(final String[] args) {
         System.out.println(HouseFactory.buildHouse(HouseType.DETACHED) + "\n");
         System.out.println(HouseFactory.buildHouse(HouseType.SEMI) + "\n");

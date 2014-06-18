@@ -1,8 +1,8 @@
 package creational.prototype;
 
-public class PrototypeRunner {
+final class PrototypeRunner {
 
-    
+    private PrototypeRunner(){}
     
     public static void main(final String[] args) throws CloneNotSupportedException{
         House house = new House();
@@ -12,12 +12,12 @@ public class PrototypeRunner {
         
         System.out.println("Prototype Design Pattern: "+ house);
         System.out.println("Prototype Design Pattern: "+ mansion);
-      }
+    }
     
     public House makeHouseAMansion(final House house) {
         house.makeAdvanced();
         
         return house;
-     }
+    }
 
 }
