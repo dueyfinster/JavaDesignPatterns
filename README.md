@@ -19,4 +19,8 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | | | Template method  |
 | | | Visitor  |
 
-## Bulding
+## Building
+To build, just do a Maven build. Also included is findbugs, jacoco, PMD and checkstyle.
+
+## Running 
+Each pattern has a class with a main method that runs that pattern - so you can try them individually. No current method for running them all - but could be done!
