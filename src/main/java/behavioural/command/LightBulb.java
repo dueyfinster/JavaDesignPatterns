@@ -9,7 +9,7 @@ package behavioural.command;
 public class LightBulb implements ILight {
 
     /**
-     *  Turns on the Light Bulb
+     *  Turns on the Light Bulb.
      */
     public void turnOn() {
         System.out.println("Light is now on");
@@ -17,7 +17,7 @@ public class LightBulb implements ILight {
     }
 
     /**
-     * Turns off the Light Bulb
+     * Turns off the Light Bulb.
      */
     public void turnOff() {
         System.out.println("Light is now off");
