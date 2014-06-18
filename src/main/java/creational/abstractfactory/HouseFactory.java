@@ -10,15 +10,15 @@ final class HouseFactory {
         
         switch (hl) {
             case CITY:
-                house = new CityHouseFactory().buildHouse(ht);
+                house = CityHouseFactory.buildHouse(ht);
                 break;
     
             case COUNTRY:
-                house = new CountryHouseFactory().buildHouse(ht);
+                house = CountryHouseFactory.buildHouse(ht);
                 break;
     
             case SUBURBS:
-                house = new SuburbHouseFactory().buildHouse(ht);
+                house = SuburbHouseFactory.buildHouse(ht);
                 break;
 
     
