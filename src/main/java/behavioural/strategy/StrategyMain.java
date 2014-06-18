@@ -23,10 +23,10 @@ final class StrategyMain {
         context = new Context(new Divide());
         int resultD = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);
  
-        System.out.println("Result A : " + resultA );
-        System.out.println("Result B : " + resultB );
-        System.out.println("Result C : " + resultC );
-        System.out.println("Result D : " + resultD );
+        System.out.println("Result A : " + resultA);
+        System.out.println("Result B : " + resultB);
+        System.out.println("Result C : " + resultC);
+        System.out.println("Result D : " + resultD);
 
     }
 
