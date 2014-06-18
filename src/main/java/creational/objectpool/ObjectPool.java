@@ -39,8 +39,8 @@ public abstract class ObjectPool {
                         System.out.println("Removing Object from pool: "
                                 + o.toString());
                         unlocked.remove(o);
-                        locked.put(o, new Long(now));
-                        return (o);
+                        locked.put(o, Long.valueOf(now));
+                        return o;
                     } else {
                         unlocked.remove(o);
                         expire(o);
@@ -51,14 +51,14 @@ public abstract class ObjectPool {
         }
         o = (PoolObject) create();
         System.out.println("no objects available, creating a new one: " + o);
-        locked.put(o, new Long(now));
-        return (o);
+        locked.put(o, Long.valueOf(now));
+        return o;
     }
 
     synchronized void checkIn(final Object o) {
         System.out.println("Checking in: " + o.toString());
         locked.remove(o);
-        unlocked.put(o, new Long(System.currentTimeMillis()));
+        unlocked.put(o, Long.valueOf(System.currentTimeMillis()));
     }
 
 }

@@ -86,8 +86,8 @@
         <module name="JavadocVariable">
             <property name="scope" value="protected"/>
             <property name="severity" value="warning"/>
-        </module>
-        <module name="JavadocStyle"/> -->
+        </module>-->
+        <module name="JavadocStyle"/> 
 
         <!-- Checks for Naming Conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
@@ -123,12 +123,10 @@
         <module name="MethodParamPad"/>
         <module name="TypecastParenPad"/>
         <module name="ParenPad"/>
-        <!--         <module name="NoWhitespaceAfter"/>
+        <module name="NoWhitespaceAfter"/>
         <module name="NoWhitespaceBefore"/>
-        
-        
         <module name="WhitespaceAfter"/>
-        <module name="WhitespaceAround"/> -->
+        <!-- <module name="WhitespaceAround"/> -->
 
 
         <!-- Modifier Checks                                    -->
@@ -151,7 +149,7 @@
         <!-- See http://checkstyle.sf.net/config_coding.html -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-       <module name="HiddenField">
+        <module name="HiddenField">
             <property name="tokens" value="VARIABLE_DEF"/>
         </module>
         <module name="IllegalInstantiation"/>

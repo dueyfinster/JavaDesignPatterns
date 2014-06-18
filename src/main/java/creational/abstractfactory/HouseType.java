@@ -1,5 +1,5 @@
 package creational.abstractfactory;
 
 public enum HouseType {
-    DETACHED,SEMI,BUNGALOW,COTTAGE;
+    DETACHED, SEMI, BUNGALOW, COTTAGE;
 }

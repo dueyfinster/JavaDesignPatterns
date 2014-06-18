@@ -12,16 +12,16 @@ final class StrategyMain {
     public static void main(final String[] args) {
          // Three contexts following different strategies
         context = new Context(new Add());
-        int resultA = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);
+        int resultA = context.executeStrategy(FIRST_NUMBER, SECOND_NUMBER);
  
         context = new Context(new Subtract());
-        int resultB = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);
+        int resultB = context.executeStrategy(FIRST_NUMBER, SECOND_NUMBER);
  
         context = new Context(new Multiply());
-        int resultC = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);
+        int resultC = context.executeStrategy(FIRST_NUMBER, SECOND_NUMBER);
         
         context = new Context(new Divide());
-        int resultD = context.executeStrategy(FIRST_NUMBER,SECOND_NUMBER);
+        int resultD = context.executeStrategy(FIRST_NUMBER, SECOND_NUMBER);
  
         System.out.println("Result A : " + resultA);
         System.out.println("Result B : " + resultB);

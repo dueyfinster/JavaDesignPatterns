@@ -7,7 +7,7 @@ package behavioural.command;
  */
 final class CommandRunner {
 
-    private CommandRunner(){}
+    private CommandRunner() {}
 
     public static void main(final String[] args) {
         

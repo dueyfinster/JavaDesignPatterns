@@ -1,7 +1,6 @@
 package creational.prototype;
 
 public class House implements Cloneable {
-    private int gears;
     private HouseType houseType;
     private int noOfBeds;
     private static final int BASIC_NO_BEDS = 3;
