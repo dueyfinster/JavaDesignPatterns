@@ -13,7 +13,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Factory~~  | Composite   | Iterator  |
 | ~~Prototype~~  | Decorator  | Mediator  |
 | ~~Singleton~~  | ~~Facade~~  | Memento  |
-| ~~Object pool~~  | Flyweight | Observer  |
+| ~~Object pool~~  | Flyweight | ~~Observer~~  |
 | | Proxy  | State  |
 | | | ~~Strategy~~  |
 | | | Template method  |
@@ -24,3 +24,8 @@ To build, just do a Maven build. Also included is findbugs, jacoco, PMD and chec
 
 ## Running 
 Each pattern has a class with a main method that runs that pattern - so you can try them individually. No current method for running them all - but could be done!
+
+
+## Contributors
+* Neil Grogan (dueyfinster)
+* Mark Howard (bark4mark)
