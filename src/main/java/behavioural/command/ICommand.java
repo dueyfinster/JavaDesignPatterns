@@ -9,10 +9,10 @@ package behavioural.command;
  * The Command Interface which gives all commands common methods.
  * 
  */
-public interface ICommand {
+interface ICommand {
     
-    public void execute();
+    void execute();
     
-    public void rollback();
+    void rollback();
 
 }

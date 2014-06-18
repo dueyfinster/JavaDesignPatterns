@@ -131,8 +131,8 @@
 
         <!-- Modifier Checks                                    -->
         <!-- See http://checkstyle.sf.net/config_modifiers.html -->
-<!--         <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/> -->
+        <module name="ModifierOrder"/>
+        <module name="RedundantModifier"/>
 
 
 
@@ -141,9 +141,8 @@
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock"/>
         <module name="LeftCurly"/>
-        
         <module name="NeedBraces"/>
-       <module name="RightCurly"/>
+        <module name="RightCurly"/>
 
 
         <!-- Checks for common coding problems               -->
