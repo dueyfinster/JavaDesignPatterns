@@ -8,7 +8,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 
  
 ## Creational	- **done** 
-* Abstract factory - **done**
+* Abstract factory - **done** 
 * Builder - **done**
 * Factory - **done**
 * Prototype - **done** 
