@@ -25,6 +25,12 @@ To build, just do a Maven build. Also included is findbugs, jacoco, PMD and chec
 ## Running 
 Each pattern has a class with a main method that runs that pattern - so you can try them individually. No current method for running them all - but could be done!
 
+## Pull Requests 
+Pull requests are very much welcome! Please note, every pull request should have:
+
+* A matching JUnit Test (with good coverage)
+* Run and fixed any checkstyle errors (run `mvn checkstyle:checkstyle`) [if you don't build will fail]
+* PMD (run `mvn pmd:pmd`) and Findbugs should also be run and best effort to resolve issues
 
 ## Contributors
 * Neil Grogan (dueyfinster)
