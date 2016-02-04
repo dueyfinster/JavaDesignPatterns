@@ -1,10 +1,8 @@
 package creational.singleton;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import creational.singleton.Singleton;
 
 public class SingletonTest {
 
@@ -12,9 +10,8 @@ public class SingletonTest {
     public void testSingletonIsTheSame() {
         Singleton once = Singleton.INSTANCE;
         Singleton twice = Singleton.INSTANCE;
-        
+
         assertEquals(once, twice);
-        
     }
 
 }

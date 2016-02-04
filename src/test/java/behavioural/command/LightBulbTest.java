@@ -1,12 +1,13 @@
 package behavioural.command;
 
-import junit.framework.TestCase;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import junit.framework.TestCase;
 
 public class LightBulbTest extends TestCase {
     private LightBulb lightBulb;
@@ -23,7 +24,6 @@ public class LightBulbTest extends TestCase {
     @After
     public void tearDown() throws Exception {
         lightBulb = null;
-
     }
 
     @Test
