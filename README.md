@@ -9,7 +9,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Creational~~  		| Structural 	| Behavioral 				|
 | ------------- 		| ------------- | ------------- 			|
 | ~~Abstract factory~~  | ~~Adapter~~  	|  Chain of responsibility  |
-| ~~Builder~~  			| Bridge  		| ~~Command~~ 				|
+| ~~Builder~~  			| ~~Bridge~~  	| ~~Command~~ 				|
 | ~~Factory~~  			| Composite   	| Iterator  				|
 | ~~Prototype~~  		| Decorator  	| Mediator  				|
 | ~~Singleton~~  		| ~~Facade~~  	| Memento  					|
