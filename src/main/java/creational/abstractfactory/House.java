@@ -12,7 +12,8 @@ public abstract class House {
     }
 
     private void orderMaterials() {
-        System.out.println("Ordering Materials for House: " + houseType.toString() + " which is to be located in: " + houseLocation);
+        System.out.println("Ordering Materials for House: " + houseType.toString() 
+            + " which is to be located in: " + houseLocation);
     }
     
     protected abstract void construct();
