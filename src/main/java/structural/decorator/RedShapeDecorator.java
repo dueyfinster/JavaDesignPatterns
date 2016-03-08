@@ -8,11 +8,11 @@ public class RedShapeDecorator extends ShapeDecorator {
     
     public void draw(){
         decoratedShape.draw();
-        setRedBorder(decoratedShape);
+        setRedBorder();
     }
     
     
-    private void setRedBorder(final Shape decoratedShape){
+    private void setRedBorder(){
         System.out.println("Border Color: Red");
     }
 
