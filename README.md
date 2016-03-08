@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/dueyfinster/DesignPatterns.png)](https://travis-ci.org/dueyfinster/DesignPatterns)
 [![Circle CI](https://circleci.com/gh/dueyfinster/DesignPatterns.svg?style=svg)](https://circleci.com/gh/dueyfinster/DesignPatterns)
+[![Build status](https://ci.appveyor.com/api/projects/status/ael2iylv4arw5hwt?svg=true)](https://ci.appveyor.com/project/dueyfinster/designpatterns)
 [![Coverage Status](https://coveralls.io/repos/dueyfinster/DesignPatterns/badge.png)](https://coveralls.io/r/dueyfinster/DesignPatterns)
 
 # Overview 
