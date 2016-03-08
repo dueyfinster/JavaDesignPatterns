@@ -13,7 +13,9 @@ import org.junit.Test;
 public class FlyweightTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-
+    private final String RED = "Red";
+    private final String BLUE = "Blue";
+    
     @Before
     public void setUp() throws Exception {
         System.setOut(new PrintStream(outContent));
@@ -21,7 +23,18 @@ public class FlyweightTest {
     }
     
     @Test
-    @Ignore
-    public void testcreatingCircle(){
+    public void same_colour_circle_same_objects(){
+        Circle c1 = (Circle) ShapeFactory.getCircle(RED);
+        Circle c2 = (Circle) ShapeFactory.getCircle(RED);
+        
+        assertTrue(c1 == c2);
+    }
+    
+    @Test
+    public void different_colour_circle_different_objects(){
+        Circle c1 = (Circle) ShapeFactory.getCircle(RED);
+        Circle c2 = (Circle) ShapeFactory.getCircle(BLUE);
+        
+        assertFalse(c1 == c2);
     }
 }
