@@ -14,7 +14,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Prototype~~  		| ~~Decorator~~ | Mediator  				|
 | ~~Singleton~~  		| ~~Facade~~  	| Memento  					|
 | ~~Object pool~~  		| Flyweight 	| ~~Observer~~  			|
-| 						| Proxy  		| State  					|
+| 						| ~~Proxy~~  	| State  					|
 | 						| 				| ~~Strategy~~  			|
 | 						| 				| Template method  			|
 | 						| 				| Visitor  					|
