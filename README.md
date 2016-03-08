@@ -13,7 +13,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Factory~~  			| ~~Composite~~ | Iterator  				|
 | ~~Prototype~~  		| ~~Decorator~~ | Mediator  				|
 | ~~Singleton~~  		| ~~Facade~~  	| Memento  					|
-| ~~Object pool~~  		| Flyweight 	| ~~Observer~~  			|
+| ~~Object pool~~  		| ~~Flyweight~~ | ~~Observer~~  			|
 | 						| ~~Proxy~~  	| State  					|
 | 						| 				| ~~Strategy~~  			|
 | 						| 				| Template method  			|
