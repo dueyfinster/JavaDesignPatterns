@@ -18,7 +18,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | 						| ~~Proxy~~  	| ~~State~~  					|
 | 						| 				| ~~Strategy~~  				|
 | 						| 				| ~~Template method~~  			|
-| 						| 				| Visitor  						|
+| 						| 				| ~~Visitor~~  					|
 
 ## Building
 To build, just do a Maven build. Also included is findbugs, jacoco, PMD and checkstyle.
