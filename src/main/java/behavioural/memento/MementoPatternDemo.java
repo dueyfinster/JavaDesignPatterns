@@ -1,9 +1,9 @@
 package behavioural.memento;
-public class MementoPatternDemo {
+public final class MementoPatternDemo {
 
    private MementoPatternDemo() {};
 
-   public static void main(String[] args) {
+   public static void main(final String[] args) {
    
       Originator originator = new Originator();
       CareTaker careTaker = new CareTaker();

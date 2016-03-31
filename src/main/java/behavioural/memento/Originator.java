@@ -15,7 +15,7 @@ public class Originator {
       return new Memento(state);
    }
 
-   public void getStateFromMemento(final Memento Memento){
-      state = Memento.getState();
+   public void getStateFromMemento(final Memento memento){
+      state = memento.getState();
    }
 }
