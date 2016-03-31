@@ -12,7 +12,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Abstract factory~~  | ~~Adapter~~  	| ~~Chain of responsibility~~	|
 | ~~Builder~~  			| ~~Bridge~~  	| ~~Command~~ 					|
 | ~~Factory~~  			| ~~Composite~~ | ~~Iterator~~  				|
-| ~~Prototype~~  		| ~~Decorator~~ | Mediator  					|
+| ~~Prototype~~  		| ~~Decorator~~ | ~~Mediator~~  				|
 | ~~Singleton~~  		| ~~Facade~~  	| Memento  						|
 | ~~Object pool~~  		| ~~Flyweight~~ | ~~Observer~~  				|
 | 						| ~~Proxy~~  	| State  						|
