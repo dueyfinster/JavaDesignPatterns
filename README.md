@@ -13,7 +13,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Builder~~  			| ~~Bridge~~  	| ~~Command~~ 					|
 | ~~Factory~~  			| ~~Composite~~ | ~~Iterator~~  				|
 | ~~Prototype~~  		| ~~Decorator~~ | ~~Mediator~~  				|
-| ~~Singleton~~  		| ~~Facade~~  	| Memento  						|
+| ~~Singleton~~  		| ~~Facade~~  	| ~~Memento~~  					|
 | ~~Object pool~~  		| ~~Flyweight~~ | ~~Observer~~  				|
 | 						| ~~Proxy~~  	| State  						|
 | 						| 				| ~~Strategy~~  				|
