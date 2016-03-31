@@ -17,7 +17,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 | ~~Object pool~~  		| ~~Flyweight~~ | ~~Observer~~  				|
 | 						| ~~Proxy~~  	| ~~State~~  					|
 | 						| 				| ~~Strategy~~  				|
-| 						| 				| Template method  				|
+| 						| 				| ~~Template method~~  			|
 | 						| 				| Visitor  						|
 
 ## Building
