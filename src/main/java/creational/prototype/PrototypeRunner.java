@@ -2,7 +2,7 @@ package creational.prototype;
 
 final class PrototypeRunner {
 
-    private PrototypeRunner(){}
+    PrototypeRunner(){}
     
     public static void main(final String[] args) throws CloneNotSupportedException{
         House house = new House();
