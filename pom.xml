@@ -4,21 +4,21 @@
   <artifactId>designpatterns</artifactId>
   <version>0.1.1-SNAPSHOT</version>
   <name>DesignPatterns</name>
-  <description>A Collection of Design Patterns</description>
+  <description>A Collection of Java Design Patterns</description>
   <ciManagement>
   	<system>Travis-CI</system>
-  	<url>https://travis-ci.org/dueyfinster/DesignPatterns</url>
+  	<url>https://travis-ci.org/dueyfinster/JavaDesignPatterns</url>
   </ciManagement>
   <issueManagement>
   	<system>GitHub</system>
-  	<url>https://github.com/dueyfinster/DesignPatterns/issues</url>
+  	<url>https://github.com/dueyfinster/JavaDesignPatterns/issues</url>
   </issueManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <url>https://github.com/dueyfinster/DesignPatterns</url>
+  <url>https://github.com/dueyfinster/JavaDesignPatterns</url>
   <scm>
-  	<url>https://github.com/dueyfinster/DesignPatterns</url>
+  	<url>https://github.com/dueyfinster/JavaDesignPatterns</url>
   </scm>
   <build>
     <plugins>
@@ -78,6 +78,14 @@
                 <goals>
                     <goal>prepare-agent</goal>
                 </goals>
+            </execution>
+            <!-- attached to Maven test phase -->
+            <execution>
+                    <id>report</id>
+                    <phase>test</phase>
+                    <goals>
+                            <goal>report</goal>
+                    </goals>
             </execution>
         </executions>
       </plugin>
