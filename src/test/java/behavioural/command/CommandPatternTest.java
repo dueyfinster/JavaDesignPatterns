@@ -45,7 +45,7 @@ public class CommandPatternTest {
     }
 
     @Test
-    public void test2() {
+    public void multiple_commands_run_can_be_all_undone() {
         LightBulb light = new LightBulb(); // Object we want to manipulate
 
         TurnOffLightCommand tofflc = new TurnOffLightCommand(light); // command

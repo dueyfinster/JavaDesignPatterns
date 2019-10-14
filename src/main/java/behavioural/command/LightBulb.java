@@ -24,7 +24,7 @@ public class LightBulb implements ILight {
     }
 
     /**
-     * Gets the status of the light bulb
+     * Gets the status of the light bulb.
      */
     public boolean isLightOn() {
         return this.lightIsOn;
