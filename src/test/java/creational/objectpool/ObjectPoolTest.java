@@ -3,41 +3,57 @@ package creational.objectpool;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+/**
+ * Object pools are primarily used for performance.
+ * 
+ * You can check-in & check-out objects as needed and the pool will manage
+ * lifecycle of objects: ie. expiry of objects, creating new objects, etc. etc.
+ */
 public class ObjectPoolTest {
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    ObjectPool pool;
 
-    
     @Before
-    public void setUp() throws Exception {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
+    public void setUp() {
+        pool = new ObjectPoolImpl(); // create a new pool
+    }
+
+    @Test
+    public void checkout_valid_pool_object() throws CloneNotSupportedException {
+        PoolObject po = pool.checkOut(); // check out from the pool
+        assertTrue(pool.validate(po)); // Validate it's still good
+    }
+
+    @Test
+    public void checkin_invalid_pool_object() throws CloneNotSupportedException {
+        PoolObject po = new PoolObject(0); // create invalid pool object, not from our pool
+
+        pool.checkIn(po); // check wrong value in
+
+        assertFalse(pool.validate(po));
+    }
+
+    @Test
+    public void validate_expired_pool_object() throws CloneNotSupportedException {
+        PoolObject po = pool.checkOut(); // check out from the pool
+
+        pool.expire(po); // Expire the object
+
+        assertFalse(pool.validate(po));
     }
 
     @Ignore
     @Test
-    public void clone_and_change_prototype_properties() throws CloneNotSupportedException{
-    	
-    	 ObjectPoolImpl opi = new ObjectPoolImpl(); // create a new pool
-         PoolObject po = opi.checkOut(); // check out from the pool
-         opi.validate(po); // Validate it's still good
-         opi.checkIn(po); // check back in to the pool (we're finished our work)
-         PoolObject po1 = opi.checkOut(); // check out from the pool (get object checked in)
-         //Thread.sleep(12000); //TODO test expiration
-         PoolObject po2 = opi.checkOut();
-         opi.checkIn(po1); // check back in to the pool (we're finished our work)
-         po2 = new PoolObject(0); // overwrite with wrong value
-         opi.checkIn(po2); // check wrong value in
-         opi.validate(po2); // Validation fails
-         
-         // TODO - Validate 
+    public void timed_out_pool_object() throws CloneNotSupportedException, InterruptedException {
+        PoolObject po = pool.checkOut(); // check out from the pool
+        assertTrue(po.getValue() == 5); // Value is valid
+
+        Thread.sleep(12000); // Test expiration
+
+        assertFalse(po.getValue() == 0); // Value is invalid after timeout
     }
 
 }
