@@ -17,7 +17,7 @@ import org.junit.Test;
 public class AbstractFactoryTest {
 
     @Test
-    public void factory_will_build_detached_house() {
+    public void suburbs_factory_will_build_detached_house() {
 
         House h = HouseFactory.buildHouse(HouseType.DETACHED);
 
@@ -27,7 +27,7 @@ public class AbstractFactoryTest {
     }
 
     @Test
-    public void factory_will_build_semid_house() {
+    public void suburbs_factory_will_build_semid_house() {
 
         House h = HouseFactory.buildHouse(HouseType.SEMI);
 
@@ -37,7 +37,7 @@ public class AbstractFactoryTest {
     }
 
     @Test
-    public void factory_will_build_bungalow_house() {
+    public void suburbs_factory_will_build_bungalow_house() {
 
         House h = HouseFactory.buildHouse(HouseType.BUNGALOW);
 
@@ -47,7 +47,95 @@ public class AbstractFactoryTest {
     }
 
     @Test
-    public void factory_will_build_cottage_house() {
+    public void suburbs_factory_will_build_cottage_house() {
+
+        House h = HouseFactory.buildHouse(HouseType.COTTAGE);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof CottageHouse);
+        assertFalse(h instanceof BungalowHouse);
+    }
+
+    @Test
+    public void city_factory_will_build_detached_house() {
+        HouseFactory.setHomeLocation(HouseLocation.CITY);
+
+        House h = HouseFactory.buildHouse(HouseType.DETACHED);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof DetachedHouse);
+        assertFalse(h instanceof SemiDetachedHouse);
+    }
+
+    @Test
+    public void city_factory_will_build_semid_house() {
+        HouseFactory.setHomeLocation(HouseLocation.CITY);
+
+        House h = HouseFactory.buildHouse(HouseType.SEMI);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof SemiDetachedHouse);
+        assertFalse(h instanceof DetachedHouse);
+    }
+
+    @Test
+    public void city_factory_will_build_bungalow_house() {
+        HouseFactory.setHomeLocation(HouseLocation.CITY);
+
+        House h = HouseFactory.buildHouse(HouseType.BUNGALOW);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof BungalowHouse);
+        assertFalse(h instanceof CottageHouse);
+    }
+
+    @Test
+    public void city_factory_will_build_cottage_house() {
+        HouseFactory.setHomeLocation(HouseLocation.CITY);
+
+        House h = HouseFactory.buildHouse(HouseType.COTTAGE);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof CottageHouse);
+        assertFalse(h instanceof BungalowHouse);
+    }
+
+    @Test
+    public void country_factory_will_build_detached_house() {
+        HouseFactory.setHomeLocation(HouseLocation.COUNTRY);
+
+        House h = HouseFactory.buildHouse(HouseType.DETACHED);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof DetachedHouse);
+        assertFalse(h instanceof SemiDetachedHouse);
+    }
+
+    @Test
+    public void country_factory_will_build_semid_house() {
+        HouseFactory.setHomeLocation(HouseLocation.COUNTRY);
+
+        House h = HouseFactory.buildHouse(HouseType.SEMI);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof SemiDetachedHouse);
+        assertFalse(h instanceof DetachedHouse);
+    }
+
+    @Test
+    public void country_factory_will_build_bungalow_house() {
+        HouseFactory.setHomeLocation(HouseLocation.COUNTRY);
+
+        House h = HouseFactory.buildHouse(HouseType.BUNGALOW);
+
+        assertTrue(h instanceof House);
+        assertTrue(h instanceof BungalowHouse);
+        assertFalse(h instanceof CottageHouse);
+    }
+
+    @Test
+    public void country_factory_will_build_cottage_house() {
+        HouseFactory.setHomeLocation(HouseLocation.COUNTRY);
 
         House h = HouseFactory.buildHouse(HouseType.COTTAGE);
 
