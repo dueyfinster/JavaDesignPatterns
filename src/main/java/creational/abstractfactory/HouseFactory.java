@@ -35,7 +35,7 @@ final class HouseFactory {
      * 
      * @param hl
      */
-    public static void setHomeLocation(HouseLocation hl) {
+    public static void setHomeLocation(final HouseLocation hl) {
         houseLoc = hl;
     }
 }
