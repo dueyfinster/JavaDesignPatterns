@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/dueyfinster/JavaDesignPatterns.png)](https://travis-ci.org/dueyfinster/JavaDesignPatterns)
 [![Circle CI](https://circleci.com/gh/dueyfinster/JavaDesignPatterns.svg?style=svg)](https://circleci.com/gh/dueyfinster/JavaDesignPatterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/ael2iylv4arw5hwt?svg=true)](https://ci.appveyor.com/project/dueyfinster/designpatterns)
-[![Coverage Status](https://coveralls.io/repos/dueyfinster/DesignPatterns/badge.png)](https://coveralls.io/r/dueyfinster/DesignPatterns)
+[![Coverage Status](https://coveralls.io/repos/github/dueyfinster/JavaDesignPatterns/badge.svg?branch=master)](https://coveralls.io/github/dueyfinster/JavaDesignPatterns?branch=master)
 
 # Overview 
 A collection of design patterns in Java. 
@@ -24,7 +24,7 @@ My aim is to implement all of them (with documentation) as a learning resource/ 
 To build, just do a Maven build. Also included is findbugs, jacoco, PMD and checkstyle.
 
 ## Running 
-Each pattern has a class with a main method that runs that pattern - so you can try them individually. No current method for running them all - but could be done!
+Tests are written that run and explain each pattern - so you can try them individually.
 
 ## Pull Requests 
 Pull requests are very much welcome! Please note, every pull request should have:
