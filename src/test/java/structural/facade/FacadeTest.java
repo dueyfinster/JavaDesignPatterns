@@ -10,23 +10,18 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+/**
+ * Facades hide complexities to the user. For example here, we just want a
+ * computer - no need to know the specs of CPU, Processor etc.
+ */
 public class FacadeTest {
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 
-    @Before
-    public void setUp() throws Exception {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
-    }
-    
-    @Ignore
     @Test
-    public void call_facade_verify_dependents_called(){
-        ComputerFacade cf = new ComputerFacade();
+    public void call_facade_verify_dependents_called() {
+        ComputerFacade cf = new ComputerFacade(); // Hide low-level details with facade
         cf.start();
-        
-       // TODO: Verify dependents called - mocking framework?
+
+        // TODO: Verify dependents called - mocking framework?
     }
 
 }
