@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/dueyfinster/JavaDesignPatterns.png)](https://travis-ci.org/dueyfinster/JavaDesignPatterns)
 [![Circle CI](https://circleci.com/gh/dueyfinster/JavaDesignPatterns.svg?style=svg)](https://circleci.com/gh/dueyfinster/JavaDesignPatterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/ael2iylv4arw5hwt?svg=true)](https://ci.appveyor.com/project/dueyfinster/designpatterns)
+[![codecov](https://codecov.io/gh/dueyfinster/JavaDesignPatterns/branch/master/graph/badge.svg)](https://codecov.io/gh/dueyfinster/JavaDesignPatterns)
 [![Coverage Status](https://coveralls.io/repos/github/dueyfinster/JavaDesignPatterns/badge.svg?branch=master)](https://coveralls.io/github/dueyfinster/JavaDesignPatterns?branch=master)
 
 # Overview 
