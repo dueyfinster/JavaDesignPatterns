@@ -1,9 +1,23 @@
----
-kind: pipeline
-name: default
+pipeline:
+  restore-cache:
+    image: drillster/drone-volume-cache
+    restore: true
+    mount:
+      - .m2
+    volumes:
+      - /tmp/cache:/cache
 
-steps:
-- name: test
-  image: maven:3-jdk-11
-  commands:
-  - mvn clean install
+  build:
+    image: maven:3-jdk-11
+    commands:
+      - pwd
+      - mvn -B install -Dmaven.repo.local=.m2
+
+  rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    mount:
+      - .m2
+    volumes:
+      - /tmp/cache:/cache
+      
